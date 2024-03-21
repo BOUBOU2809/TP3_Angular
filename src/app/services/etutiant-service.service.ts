@@ -24,4 +24,10 @@ export class EtudiantService {
   getEtudiants(): Observable<Etudiant[]> {
     return of(this.etudiants);
   }
+  getEtudiantsParis(): Etudiant[] {
+    return this.etudiants.filter(etudiant => etudiant._ville === 'Paris');
+  }
+  getEtudiantsHorsParis(): Etudiant[] {
+    return this.etudiants.filter(etudiant => etudiant._ville !== 'Paris');
+  }
 }

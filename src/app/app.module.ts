@@ -7,6 +7,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { EtudiantComponent } from './components/etudiants/etudiants.component';
 import { SpecialiteComponent } from './components/specialite/specialite.component';
+import { EtudiantParisComponent } from './components/etudiant-paris/etudiant-paris.component';
+import { EtudiantHorsParisComponent } from './components/etudiant-hors-paris/etudiant-hors-paris.component';
+import { FormSpecialiteComponent } from './forms/form-specialite/form-specialite.component';
+import { FormEtudiantComponent } from './forms/form-etudiant/form-etudiant.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { SpecialiteComponent } from './components/specialite/specialite.componen
     HomeComponent,
     EtudiantComponent,
     SpecialiteComponent,
+    EtudiantParisComponent,
+    EtudiantHorsParisComponent,
+    FormSpecialiteComponent,
+    FormEtudiantComponent,
   ],
   imports: [
     BrowserModule,
