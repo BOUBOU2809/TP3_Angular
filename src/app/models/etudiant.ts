@@ -1,5 +1,4 @@
 import { IEtudiant } from './ietudiant';
-import { ISpecialite } from './ispecialite';
 
 export class Etudiant implements IEtudiant {
   constructor(

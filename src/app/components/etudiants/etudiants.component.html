@@ -1,4 +1,31 @@
-<h2>Liste des étudiants</h2>
-<div *ngFor="let etudiant of etudiants">
-  <p>{{ etudiant.nom }} {{ etudiant.prenom }}</p>
+<div id="divliste">
+<h2 style="color:white">Liste des étudiants</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Adresse</th>
+      <th scope="col">Code Postale</th>
+      <th scope="col">Ville</th>
+      <th scope="col">Adresse Mail</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Âge</th>
+      <th scope="col">idCand</th>
+    </tr>
+  </thead>
+    <tbody *ngFor="let etudiant of etudiants">
+      <tr>
+        <th scope="row">{{ etudiant._nom }}</th>
+        <td>{{ etudiant._prenoms }}</td>
+        <td>{{ etudiant._rue }}</td>
+        <td>{{ etudiant._cp }}</td>
+        <td>{{ etudiant._ville }}</td>
+        <td>{{ etudiant._courriel }}</td>
+        <td>{{ etudiant._genre }}</td>
+        <td>{{ etudiant._age }}</td>
+        <td>{{ etudiant._idCand }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

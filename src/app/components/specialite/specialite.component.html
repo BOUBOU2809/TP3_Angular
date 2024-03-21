@@ -1,1 +1,17 @@
-<p>specialite works!</p>
+<div id="divliste">
+    <h2 style="color:white">Liste des spécialités</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Libelle</th>
+          <th scope="col">idSpecialité</th>
+        </tr>
+      </thead>
+        <tbody *ngFor="let spec of specialites">
+          <tr>
+            <th scope="row">{{ spec._libelle }}</th>
+            <td>{{ spec._idSpec }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

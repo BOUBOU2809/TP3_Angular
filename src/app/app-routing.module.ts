@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component'; // Assurez-vous d'importer correctement HomeComponent
-import { SpecialiteComponent } from './components/specialite/specialite.component'; // Assurez-vous d'importer correctement SpecialiteComponent
+import { HomeComponent } from './components/home/home.component';
+import { EtudiantComponent } from './components/etudiants/etudiants.component';
+import { SpecialiteComponent } from './components/specialite/specialite.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }, // Route vers HomeComponent pour la page d'accueil
-  { path: 'specialites', component: SpecialiteComponent }, // Route vers SpecialiteComponent
-  // Vous pouvez ajouter d'autres routes ici si nécessaire
+  { path: 'home', component: HomeComponent },
+  { path: 'etudiants', component: EtudiantComponent },
+  { path: 'specialite', component: SpecialiteComponent },
 ];
 
 @NgModule({

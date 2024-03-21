@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Etudiant } from '../models/etudiant'; // Assurez-vous d'importer la classe Etudiant
+import { Etudiant } from '../models/etudiant';
 
 @Injectable({
   providedIn: 'root'
